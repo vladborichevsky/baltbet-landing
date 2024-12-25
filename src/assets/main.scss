@@ -1,3 +1,4 @@
+@use './variables' as vars;
 
 * {
   margin: 0;
@@ -5,36 +6,44 @@
 }
 
 body {
-  width: 100%;
+  width: 1000px;
+  margin: 0 auto;
   height: 100vh;
-  padding: 20px 40px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  padding: 20px 0;
   text-align: center;
   box-sizing: border-box;
-  background: url('/background.png') center 50%/cover no-repeat;
+  background-color: vars.$background-color;
+  color: #ffff;
+}
+
+@media (max-width: 1200px) {
+  body {
+    width: 850px;
+    padding: 10px 0;
+  }
+}
+
+@media (max-width: 992px) {
+  body {
+    width: 680px;
+  }
 }
 
 @media (max-width: 767px) {
   body {
-    padding: 10px 20px;
+    width: 500px;
   }
 }
 
 @media (max-width: 576px) {
   body {
-    padding: 5px 10px;
-    background: url('/mob_background.png') center 50%/cover no-repeat;
+    width: 100%;
   }
 }
 
 #app {
   width: 100%;
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
 @font-face {
