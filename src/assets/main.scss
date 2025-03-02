@@ -13,7 +13,7 @@ body {
   align-items: center;
   text-align: center;
   box-sizing: border-box;
-  background: url('/background.png') center 50%/cover no-repeat;
+  background: url('/background.webp') center 50%/cover no-repeat;
 }
 
 @media (max-width: 767px) {
@@ -25,7 +25,7 @@ body {
 @media (max-width: 576px) {
   body {
     padding: 5px 10px;
-    background: url('/mob_background.png') center 50%/cover no-repeat;
+    background: url('/mob_background.webp') center 50%/cover no-repeat;
   }
 }
 
